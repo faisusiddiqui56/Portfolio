@@ -4,3 +4,5 @@ Allow: /
 # Disallow admin pages if any
 Disallow: /admin/
 Disallow: /private/
+
+Sitemap: https://faishalsiddiqui.in/sitemap.xml
