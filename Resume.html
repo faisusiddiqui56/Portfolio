@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faishal Siddiqui - Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            background: #ececf1;
+            color: #222;
+            font: 14px/1.5 Arial, sans-serif;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 44px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, .12);
+        }
+
+        header {
+            border-bottom: 3px solid #7c3aed;
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            margin: 0;
+            color: #2e1065;
+            font-size: 34px;
+        }
+
+        .role {
+            color: #7c3aed;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 4px 0 12px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+            color: #555;
+        }
+
+        h2 {
+            color: #2e1065;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 6px;
+            margin: 24px 0 10px;
+        }
+
+        h3 {
+            margin: 0 0 4px;
+            font-size: 15px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        ul {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px 24px;
+        }
+
+        .project {
+            margin-bottom: 14px;
+        }
+
+        .actions {
+            max-width: 850px;
+            margin: 0 auto 14px;
+            text-align: right;
+        }
+
+        button {
+            border: 0;
+            border-radius: 8px;
+            padding: 10px 16px;
+            background: #7c3aed;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 26px 22px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .resume {
+                max-width: none;
+                box-shadow: none;
+                padding: 24px;
+            }
+
+            .actions {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="actions"><button onclick="window.print()">Save as PDF / Print</button></div>
+    <main class="resume">
+        <header>
+            <h1>Faishal Siddiqui</h1>
+            <div class="role">Full Stack Developer</div>
+            <div class="contact">
+                <span>faishalsiddiqui.in</span>
+                <span>GitHub: github.com</span>
+                <span>LinkedIn: linkedin.com</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Full Stack Web Developer focused on building responsive, scalable and user-friendly applications using
+                modern frontend and backend technologies.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div><strong>Frontend:</strong> HTML, CSS, JavaScript</div>
+                <div><strong>Backend:</strong> C#, ASP.NET</div>
+                <div><strong>Database:</strong> My SQL, MSSQL</div>
+                <div><strong>Programming:</strong> Python, C++, DSA</div>
+                <div><strong>Tools:</strong> Git, GitHub, Figma</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Analytics Dashboard</h3>
+                <p>Developed an analytics platform with real-time data visualization and collaboration-focused features.
+                </p>
+                <p><strong>Technologies:</strong> C#, ASP.NET</p>
+            </div>
+            <div class="project">
+                <h3>Hospital Management System</h3>
+                <p>Built a healthcare management platform for patient records, appointments and operational logs.</p>
+                <p><strong>Technologies:</strong> React, MongoDB</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Strengths</h2>
+            <ul>
+                <li>Responsive and accessible interface development</li>
+                <li>Frontend and backend integration</li>
+                <li>Problem solving and continuous learning</li>
+                <li>Clean, maintainable application structure</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
