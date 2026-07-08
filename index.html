@@ -99,7 +99,7 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="Resume.html" target="_blank" class="primary-button header-resume-btn">
+                <a href="html/Resume.html" target="_blank" class="primary-button header-resume-btn">
                     <i class="fa-solid fa-download"></i> Resume
                 </a>
             </nav>
@@ -119,7 +119,7 @@
                 <a href="#projects" class="mobile-nav-link">Projects</a>
                 <a href="#education" class="mobile-nav-link">Education</a>
                 <a href="#contact" class="mobile-nav-link">Contact</a>
-                <a href="Resume.html" target="_blank" class="primary-button mobile-resume-btn">
+                <a href="html/Resume.html" target="_blank" class="primary-button mobile-resume-btn">
                     <i class="fa-solid fa-download"></i> Download Resume
                 </a>
             </div>
@@ -184,7 +184,7 @@
                 <!-- Stats -->
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <strong>2+</strong>
+                        <strong id="project-count">2+</strong>
                         <span>Projects</span>
                     </div>
                     <div class="hero-stat-divider"></div>
@@ -1088,6 +1088,16 @@
         }
     </script>
 
+    <!-- Dynamic Project Count -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const projectCards = document.querySelectorAll('.project-card');
+            const projectCountElement = document.getElementById('project-count');
+            if (projectCards.length > 0 && projectCountElement) {
+                projectCountElement.innerText = projectCards.length + '+';
+            }
+        });
+    </script>
 </body>
 
 </html>
