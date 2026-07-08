@@ -184,7 +184,7 @@
                 <!-- Stats -->
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <strong>2+</strong>
+                        <strong id="project-count">2+</strong>
                         <span>Projects</span>
                     </div>
                     <div class="hero-stat-divider"></div>
@@ -1086,6 +1086,17 @@
                 }, 2500);
             }, 1200);
         }
+    </script>
+
+    <!-- Dynamic Projects Count -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var projectCountElement = document.getElementById('project-count');
+            var projectCards = document.querySelectorAll('.project-card');
+            if (projectCountElement && projectCards.length > 0) {
+                projectCountElement.innerText = projectCards.length + '+';
+            }
+        });
     </script>
 
 </body>

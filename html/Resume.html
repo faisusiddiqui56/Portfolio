@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Siddiqui - Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            background: #ececf1;
+            color: #222;
+            font: 14px/1.5 Arial, sans-serif;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 44px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, .12);
+        }
+
+        header {
+            background: #1e3a63;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin: -44px -44px 24px -44px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .role {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 12px;
+            letter-spacing: 2px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+            font-size: 13px;
+        }
+        
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h2 {
+            color: #1e3a63;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #1e3a63;
+            padding-bottom: 4px;
+            margin: 24px 0 12px;
+        }
+
+        h3 {
+            margin: 0 0 4px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .job-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        
+        .job-title span.duration {
+            font-style: italic;
+            color: #555;
+            font-size: 13px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        ul {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+        
+        ul li {
+            margin-bottom: 4px;
+        }
+
+        table.skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 12px;
+        }
+        
+        table.skills-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        table.skills-table td:first-child {
+            font-weight: bold;
+            color: #1e3a63;
+            width: 160px;
+        }
+
+        .project {
+            margin-bottom: 16px;
+        }
+
+        .actions {
+            max-width: 850px;
+            margin: 0 auto 14px;
+            text-align: right;
+        }
+
+        button {
+            border: 0;
+            border-radius: 8px;
+            padding: 10px 16px;
+            background: #1e3a63;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .edu-item {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 26px 22px;
+            }
+            
+            header {
+                margin: -26px -22px 24px -22px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+            
+            table.skills-table td {
+                display: block;
+                width: 100%;
+            }
+            table.skills-table td:first-child {
+                border-bottom: none;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .resume {
+                max-width: none;
+                box-shadow: none;
+                padding: 0;
+            }
+            
+            header {
+                margin: 0 0 24px 0;
+            }
+
+            .actions {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="actions"><button onclick="window.print()">Save as PDF / Print</button></div>
+    <main class="resume">
+        <header>
+            <h1>Faisal Siddiqui</h1>
+            <div class="role">FULL STACK ASP.NET DEVELOPER</div>
+            <div class="contact">
+                <span>Gangarai, India</span>
+                <span>|</span>
+                <span>+91 7800628299</span>
+                <span>|</span>
+                <a href="mailto:faisal18.siddiqui@gmail.com">faisal18.siddiqui@gmail.com</a>
+                <span>|</span>
+                <a href="https://linkedin.com/in/faisalsiddiqui756">linkedin.com/in/faisalsiddiqui756</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>B.Tech (CSE) graduate with hands-on experience building full stack web applications using ASP.NET, C#, Web API and SQL Server. Skilled in developing responsive front-end interfaces with HTML, CSS, Bootstrap and Tailwind CSS. Seeking a Full Stack Developer role to apply strong problem-solving and development skills to build scalable, real-world applications.</p>
+        </section>
+        
+        <section>
+            <h2>Experience</h2>
+            <div class="job-title">
+                <h3><strong>Software Developer Intern</strong></h3>
+                <span class="duration">6 Months | January 2026 – July 2026</span>
+            </div>
+            <ul>
+                <li>Worked on full stack web application development using ASP.NET, C# and SQL Server.</li>
+                <li>Built and consumed RESTful Web APIs, and developed responsive front-end interfaces using HTML, CSS, Bootstrap and Tailwind CSS.</li>
+                <li>Collaborated with the team on real-world project requirements, debugging and feature delivery.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <table class="skills-table">
+                <tr>
+                    <td>Languages</td>
+                    <td>C#, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Web Technologies</td>
+                    <td>ASP.NET, ASP.NET Web API, ASP.NET Identity, HTML, CSS, Bootstrap, Tailwind CSS</td>
+                </tr>
+                <tr>
+                    <td>Databases</td>
+                    <td>MS SQL Server, MySQL</td>
+                </tr>
+                <tr>
+                    <td>Concepts</td>
+                    <td>MVC Architecture, RESTful API Design, Authentication & Authorization, Responsive Web Design, CRUD Operations</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <div class="job-title">
+                    <h3><strong>1. Car Parking Management System</strong></h3>
+                    <span class="duration">ASP.NET, C#, MS SQL Server, Bootstrap</span>
+                </div>
+                <ul>
+                    <li>Developed a web-based system to manage vehicle entry/exit, parking slot allocation and billing for a multi-level parking area.</li>
+                    <li>Implemented real-time slot availability tracking to reduce manual errors and improve space utilization.</li>
+                    <li>Designed database schema in MS SQL Server for vehicles, slots, bookings and payment records.</li>
+                    <li>Built responsive admin dashboard using Bootstrap to view occupancy reports and generate parking bills.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="job-title">
+                    <h3><strong>2. Local Market Service (Online Local Marketplace App)</strong></h3>
+                    <span class="duration">ASP.NET, Web API, JavaScript, MySQL, ASP.NET Identity</span>
+                </div>
+                <ul>
+                    <li>Built a platform connecting local vendors and customers for browsing products/services and placing orders online.</li>
+                    <li>Created RESTful Web APIs for vendor listings, product catalog, cart and order management.</li>
+                    <li>Implemented user identity, authentication and role-based authorization using ASP.NET Identity, enabling secure registration, login and access control for vendors and customers.</li>
+                    <li>Implemented search and category-wise filtering to help users quickly find nearby shops and services.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="job-title">
+                    <h3><strong>3. Student Management System</strong></h3>
+                    <span class="duration">ASP.NET, C#, MS SQL Server, HTML/CSS</span>
+                </div>
+                <ul>
+                    <li>Designed a system for colleges to manage student records, attendance, marks and fee details digitally.</li>
+                    <li>Implemented CRUD operations for student registration, course allocation and result management.</li>
+                    <li>Created role-based login for Admin, Faculty and Student with secure authentication.</li>
+                    <li>Generated attendance and performance reports to reduce manual record-keeping workload.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu-item">
+                <strong>B.Tech (Computer Science & Engineering)</strong> — ITM, Maharajganj | 2026 | CGPA: 6.92
+            </div>
+            <div class="edu-item">
+                <strong>Intermediate (12th)</strong> — MSI Inter College, Buxipur, Gorakhpur | 2018 | 66%
+            </div>
+            <div class="edu-item">
+                <strong>High School (10th)</strong> — DDIC, Prayagnagar, Bhitauli, Maharajganj | 2016 | 87%
+            </div>
+        </section>
+        
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>HTML & CSS — Certificate of Participation, DigiCoders Technologies (P) Ltd. (July 2026)</li>
+                <li>Designing Industry-Grade Authentication — Workshop, DigiCoders Technologies (P) Ltd. (July 2026)</li>
+                <li>Data Analysis — Workshop, DigiCoders Technologies (P) Ltd. (March 2026)</li>
+                <li>Scholarship Skill-Up Test 2.0 — DigiCoders Technologies (P) Ltd. (December 2025)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Key Strengths</h2>
+            <p>Quick Learner &nbsp;&bull;&nbsp; Problem Solving &nbsp;&bull;&nbsp; Team Collaboration &nbsp;&bull;&nbsp; Adaptability &nbsp;&bull;&nbsp; Time Management</p>
+        </section>
+        
+        <section style="margin-top: 30px;">
+            <h2>Declaration</h2>
+            <p>I hereby declare that the above information is true and correct to the best of my knowledge and belief.</p>
+            <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <div>
+                    <p>Place: Gangarai</p>
+                    <p>Date: ___________</p>
+                </div>
+                <div style="text-align: right; padding-top: 20px;">
+                    <strong>Faisal Siddiqui</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
